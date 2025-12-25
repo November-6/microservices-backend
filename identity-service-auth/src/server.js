@@ -6,14 +6,25 @@ const helmet = require("helmet");
 const cors = require("cors");
 const Redis = require("ioredis");
 const app = express();
+const { rateLimit } = require("express-rate-limit");
 const { RateLimiterRedis } = require("rate-limiter-flexible");
 const rateLimitMiddleware = require("./middleware/rate-limiter-middleware");
+const { RedisStore } = require("rate-limit-redis");
+const routes = require("./routes/identity-service-route");
+const errorHandler = require("./middleware/errorHandler");
 
 // redis runs as its own server remember, thats why we need a URL for it.
 // will prolly make a utube video on this ive studied this tech a lot in the past few days
 // Also in past I was using node redis package which is officially supported by redis but ioredis is better for production use cases apparently
 const redisClient = new Redis(process.env.REDIS_URL);
 
+redisClient.on("connect", () => {
+  logger.info("Connected to Redis");
+});
+
+redisClient.on("error", (err) => {
+  logger.error("Redis connection error:", err);
+});
 mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => logger.info("Connected to MongoDB"))
@@ -62,5 +73,47 @@ const rateLimiter = new RateLimiterRedis({
 
 // read more on this node-rate-limiter-flexible its kinda cool actually
 
-
 app.use(rateLimitMiddleware(rateLimiter));
+
+// This is another layer of security for sensitive endpoints like login and registration
+// This will stop attackters from making more than 50 requests in 15 minutes to these endpoints
+
+// Request
+//   ↓
+// Global Redis limiter (10 req/sec)
+//   ↓
+// Sensitive endpoint limiter (50 / 15 min)
+//   ↓
+// Auth logic
+
+// For routes where this middleware is applied:
+// Allow at most 50 requests per IP per 15 minutes,
+// track counts in Redis,
+// log abuse,
+// and return a clean 429 error when exceeded.
+
+// This is another middleware only, but im not putting it in another file coz i regret putting the last one already. But yeah its a rate limiter specifically for sensitive endpoints like login and registration
+const sensitiveEndpointsLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 50,
+  standardHeaders: true,
+  legacyHeaders: false,
+  handler: (req, res) => {
+    logger.warn(`Sensitive endpoint rate limit exceeded for IP: ${req.ip}`);
+    res.status(429).json({ success: false, message: "Too many requests" });
+  },
+  store: new RedisStore({
+    sendCommand: (...args) => redisClient.call(...args),
+  }),
+});
+
+app.use("/api/auth/register", sensitiveEndpointsLimiter);
+
+app.use("/api/auth", routes);
+
+app.use(errorHandler);
+
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => {
+  logger.info(`Identity Service Auth running on port ${PORT}`);
+});
