@@ -25,6 +25,7 @@ redisClient.on("connect", () => {
 redisClient.on("error", (err) => {
   logger.error("Redis connection error:", err);
 });
+
 mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => logger.info("Connected to MongoDB"))

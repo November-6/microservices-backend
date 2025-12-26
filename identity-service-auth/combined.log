@@ -25,3 +25,21 @@
 {"level":"info","message":"Identity Service Auth running on port 3001","service":"identity-service","timestamp":"2025-12-25T19:21:40.570Z"}
 {"level":"info","message":"Connected to Redis","service":"identity-service","timestamp":"2025-12-25T19:21:40.578Z"}
 {"level":"info","message":"Connected to MongoDB","service":"identity-service","timestamp":"2025-12-25T19:21:41.206Z"}
+{"level":"info","message":"Identity Service Auth running on port 3001","service":"identity-service","timestamp":"2025-12-25T19:25:22.389Z"}
+{"level":"info","message":"Connected to Redis","service":"identity-service","timestamp":"2025-12-25T19:25:22.397Z"}
+{"level":"info","message":"Connected to MongoDB","service":"identity-service","timestamp":"2025-12-25T19:25:29.448Z"}
+{"level":"info","message":"Recieved POST request for /api/auth/register with body [object Object]","service":"identity-service","timestamp":"2025-12-25T19:27:20.932Z"}
+{"level":"info","message":"Registration request received for user: abhinav","service":"identity-service","timestamp":"2025-12-25T19:27:20.942Z"}
+{"level":"warn","message":"Validation failed for user: abhinav, error: \"email\" must be a valid email","service":"identity-service","timestamp":"2025-12-25T19:27:20.950Z"}
+{"level":"info","message":"Recieved POST request for /api/auth/register with body [object Object]","service":"identity-service","timestamp":"2025-12-25T19:27:37.679Z"}
+{"level":"info","message":"Registration request received for user: abhinav","service":"identity-service","timestamp":"2025-12-25T19:27:37.682Z"}
+{"level":"info","message":"User registered successfully: abhinav","service":"identity-service","timestamp":"2025-12-25T19:27:37.961Z"}
+{"level":"info","message":"Recieved POST request for /api/auth/register with body [object Object]","service":"identity-service","timestamp":"2025-12-25T19:32:26.190Z"}
+{"level":"info","message":"Registration request received for user: abhinav","service":"identity-service","timestamp":"2025-12-25T19:32:26.193Z"}
+{"level":"warn","message":"Registration attempt with existing email or username: abhinavprajapati351@gmail.com","service":"identity-service","timestamp":"2025-12-25T19:32:26.267Z"}
+{"level":"info","message":"Identity Service Auth running on port 3001","service":"identity-service","timestamp":"2025-12-25T19:40:27.307Z"}
+{"level":"info","message":"Connected to Redis","service":"identity-service","timestamp":"2025-12-25T19:40:27.314Z"}
+{"level":"info","message":"Connected to MongoDB","service":"identity-service","timestamp":"2025-12-25T19:40:27.958Z"}
+{"level":"info","message":"Identity Service Auth running on port 3001","service":"identity-service","timestamp":"2025-12-25T20:57:45.646Z"}
+{"level":"info","message":"Connected to Redis","service":"identity-service","timestamp":"2025-12-25T20:57:45.669Z"}
+{"level":"info","message":"Connected to MongoDB","service":"identity-service","timestamp":"2025-12-25T20:57:46.777Z"}
