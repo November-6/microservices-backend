@@ -8,6 +8,7 @@ const { RedisStore } = require("rate-limit-redis");
 const logger = require("./utils/logger");
 const proxy = require("express-http-proxy");
 const errorHandler = require("./middleware/errorhandler");
+const {validateToken} = require('../src/middleware/verify-token')
 // const { validateToken } = require("./middleware/authMiddleware");
 
 const app = express();
@@ -35,7 +36,7 @@ const apiGatewayRateLimiter = rateLimit({
   }),
 });
 
-app.use(apiGatewayRateLimiter);
+// app.use(apiGatewayRateLimiter);
 app.use((req, res, next) => {
   logger.info(
     `API GATEWAY Recieved ${req.method} request for ${req.url} with body ${req.body}`
@@ -76,17 +77,37 @@ const proxyOptions = {
 
 app.use("/v1/auth", proxy(process.env.IDENTITY_SERVICE_URL, proxyOptions));
 
+proxyPostOptions = {
+  ...proxyOptions,
+  proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
+    proxyReqOpts.headers["Content-Type"] = "application/json";
+    proxyReqOpts.headers["x-user-id"] = srcReq.user.userId;
+
+    return proxyReqOpts;
+  },
+  userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
+    logger.info(`Response received from Post service: ${proxyRes.statusCode}`);
+
+    return proxyResData;
+  },
+};
+
+app.use(
+  "/v1/posts",
+  validateToken,
+  proxy(process.env.POST_SERVICE_URL, proxyPostOptions)
+);
 
 //! Crash course on Proxying bitches
 // This crash course got too loong for this file so check for details in this part in word doc
 
-
 //TODO - this rn does not really check if a service is alive or not, implement a health check endpoint like I did for rust load balancer where a periodic get health message is sent to each service to check if its alive or not
 
-PORT = 3000
+PORT = 3000;
 app.listen(PORT, () => {
   logger.info(`API Gateway running on port ${PORT}`);
-  logger.info(`API Gateway forwarding /v1/auth requests to Identity Service at ${process.env.IDENTITY_SERVICE_URL}`);
-  logger.info('REDIS URL: %s', process.env.REDIS_URL);
-}
-)
+  logger.info(
+    `API Gateway forwarding /v1/auth requests to Identity Service at ${process.env.IDENTITY_SERVICE_URL}`
+  );
+  logger.info("REDIS URL: %s", process.env.REDIS_URL);
+});
