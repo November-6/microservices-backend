@@ -126,3 +126,30 @@
 {"level":"info","message":"Recieved POST request for /api/auth/login with body [object Object]","service":"identity-service","timestamp":"2025-12-28T21:59:06.167Z"}
 {"level":"info","message":"login request received for user: newUser123@gmail.com","service":"identity-service","timestamp":"2025-12-28T21:59:06.174Z"}
 {"level":"info","message":"User logged in successfully: newUser123@gmail.com","service":"identity-service","timestamp":"2025-12-28T21:59:06.393Z"}
+{"level":"info","message":"Identity Service Auth running on port 3001","service":"identity-service","timestamp":"2025-12-28T22:15:31.860Z"}
+{"level":"info","message":"Connected to Redis","service":"identity-service","timestamp":"2025-12-28T22:15:31.869Z"}
+{"level":"info","message":"Connected to MongoDB","service":"identity-service","timestamp":"2025-12-28T22:15:33.590Z"}
+{"level":"info","message":"Recieved POST request for /api/auth/login with body [object Object]","service":"identity-service","timestamp":"2025-12-28T22:16:00.889Z"}
+{"level":"info","message":"login request received for user: newUser123@gmail.com","service":"identity-service","timestamp":"2025-12-28T22:16:00.894Z"}
+{"level":"info","message":"User logged in successfully: newUser123@gmail.com","service":"identity-service","timestamp":"2025-12-28T22:16:01.303Z"}
+{"level":"info","message":"Recieved POST request for /api/auth/login with body [object Object]","service":"identity-service","timestamp":"2025-12-28T22:17:44.835Z"}
+{"level":"info","message":"login request received for user: newUser123@gmail.com","service":"identity-service","timestamp":"2025-12-28T22:17:44.837Z"}
+{"level":"info","message":"User logged in successfully: newUser123@gmail.com","service":"identity-service","timestamp":"2025-12-28T22:17:45.044Z"}
+{"level":"info","message":"Recieved POST request for /api/auth/login with body [object Object]","service":"identity-service","timestamp":"2025-12-28T22:26:39.467Z"}
+{"level":"info","message":"login request received for user: newUser123@gmail.com","service":"identity-service","timestamp":"2025-12-28T22:26:39.475Z"}
+{"level":"info","message":"User logged in successfully: newUser123@gmail.com","service":"identity-service","timestamp":"2025-12-28T22:26:39.866Z"}
+{"level":"info","message":"Recieved POST request for /api/auth/login with body [object Object]","service":"identity-service","timestamp":"2025-12-28T22:27:06.390Z"}
+{"level":"info","message":"login request received for user: newUser123@gmail.com","service":"identity-service","timestamp":"2025-12-28T22:27:06.391Z"}
+{"level":"info","message":"User logged in successfully: newUser123@gmail.com","service":"identity-service","timestamp":"2025-12-28T22:27:06.855Z"}
+{"level":"info","message":"Recieved POST request for /api/auth/login with body [object Object]","service":"identity-service","timestamp":"2025-12-28T22:27:12.230Z"}
+{"level":"info","message":"login request received for user: newUser123@gmail.com","service":"identity-service","timestamp":"2025-12-28T22:27:12.232Z"}
+{"level":"info","message":"User logged in successfully: newUser123@gmail.com","service":"identity-service","timestamp":"2025-12-28T22:27:12.617Z"}
+{"level":"info","message":"Recieved POST request for /api/auth/login with body [object Object]","service":"identity-service","timestamp":"2025-12-28T22:29:26.340Z"}
+{"level":"info","message":"login request received for user: newUser123@gmail.com","service":"identity-service","timestamp":"2025-12-28T22:29:26.344Z"}
+{"level":"info","message":"User logged in successfully: newUser123@gmail.com","service":"identity-service","timestamp":"2025-12-28T22:29:26.542Z"}
+{"level":"info","message":"Recieved POST request for /api/auth/login with body [object Object]","service":"identity-service","timestamp":"2025-12-28T22:32:24.479Z"}
+{"level":"info","message":"login request received for user: newUser123@gmail.com","service":"identity-service","timestamp":"2025-12-28T22:32:24.482Z"}
+{"level":"info","message":"User logged in successfully: newUser123@gmail.com","service":"identity-service","timestamp":"2025-12-28T22:32:24.686Z"}
+{"level":"info","message":"Identity Service Auth running on port 3001","service":"identity-service","timestamp":"2025-12-28T22:46:13.731Z"}
+{"level":"info","message":"Connected to Redis","service":"identity-service","timestamp":"2025-12-28T22:46:13.741Z"}
+{"level":"info","message":"Connected to MongoDB","service":"identity-service","timestamp":"2025-12-28T22:46:14.508Z"}

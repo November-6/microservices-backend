@@ -37,3 +37,5 @@
 {"level":"info","message":"Post created with ID: 6951b21b1a2696bcec727911","service":"post-service","timestamp":"2025-12-28T22:41:31.333Z"}
 {"level":"info","message":"commentOnPost endpoint hit","service":"post-service","timestamp":"2025-12-28T22:42:53.638Z"}
 {"level":"info","message":"commentOnPost endpoint hit","service":"post-service","timestamp":"2025-12-28T22:43:15.486Z"}
+{"level":"info","message":"commentOnPost endpoint hit","service":"post-service","timestamp":"2025-12-28T22:43:30.448Z"}
+{"level":"info","message":"Comment 6951b29213c29548f0aa143e added to Post 6951b21b1a2696bcec727911","service":"post-service","timestamp":"2025-12-28T22:43:30.890Z"}

@@ -300,3 +300,49 @@
 {"level":"info","message":"API GATEWAY Recieved POST request for /v1/posts/ with body undefined","service":"api-gateway","timestamp":"2025-12-28T22:29:51.188Z"}
 {"level":"warn","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTRlZmZkZTk1Mzk3ZmU2MmRjNWY3NTgiLCJ1c2VybmFtZSI6Im5ld1VzZXJOYW1lMTIzIiwiaWF0IjoxNzY2OTYwOTY2LCJleHAiOjE3NjY5NjI0NjZ9.XooFiSvCjiUW43Jp8N5n26pisNmIBIstI_-pUtUdZ8g","service":"api-gateway","timestamp":"2025-12-28T22:29:51.189Z"}
 {"level":"warn","message":"Invalid token!","service":"api-gateway","timestamp":"2025-12-28T22:29:51.189Z"}
+{"level":"info","message":"API Gateway running on port 3000","service":"api-gateway","timestamp":"2025-12-28T22:32:15.414Z"}
+{"level":"info","message":"API Gateway forwarding /v1/auth requests to Identity Service at http://localhost:3001","service":"api-gateway","timestamp":"2025-12-28T22:32:15.416Z"}
+{"level":"info","message":"REDIS URL: redis://localhost:6379","service":"api-gateway","timestamp":"2025-12-28T22:32:15.416Z"}
+{"level":"info","message":"API GATEWAY Connected to Redis","service":"api-gateway","timestamp":"2025-12-28T22:32:15.424Z"}
+{"level":"info","message":"API GATEWAY Recieved POST request for /v1/auth/login with body undefined","service":"api-gateway","timestamp":"2025-12-28T22:32:24.468Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"api-gateway","timestamp":"2025-12-28T22:32:24.688Z"}
+{"level":"info","message":"API GATEWAY Recieved POST request for /v1/posts/ with body undefined","service":"api-gateway","timestamp":"2025-12-28T22:32:33.163Z"}
+{"level":"warn","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTRlZmZkZTk1Mzk3ZmU2MmRjNWY3NTgiLCJ1c2VybmFtZSI6Im5ld1VzZXJOYW1lMTIzIiwiaWF0IjoxNzY2OTYxMTQ0LCJleHAiOjE3NjY5NjI2NDR9.6HjxaSPnsFsWUil2iMeBlUi6PJzGrm8z4E2gsTKqXgY","service":"api-gateway","timestamp":"2025-12-28T22:32:33.163Z"}
+{"level":"info","message":"Response received from Post service: 500","service":"api-gateway","timestamp":"2025-12-28T22:32:33.221Z"}
+{"level":"info","message":"API GATEWAY Recieved POST request for /v1/posts/ with body undefined","service":"api-gateway","timestamp":"2025-12-28T22:33:31.920Z"}
+{"level":"warn","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTRlZmZkZTk1Mzk3ZmU2MmRjNWY3NTgiLCJ1c2VybmFtZSI6Im5ld1VzZXJOYW1lMTIzIiwiaWF0IjoxNzY2OTYxMTQ0LCJleHAiOjE3NjY5NjI2NDR9.6HjxaSPnsFsWUil2iMeBlUi6PJzGrm8z4E2gsTKqXgY","service":"api-gateway","timestamp":"2025-12-28T22:33:31.921Z"}
+{"level":"info","message":"Response received from Post service: 500","service":"api-gateway","timestamp":"2025-12-28T22:33:31.971Z"}
+{"level":"info","message":"API GATEWAY Recieved POST request for /v1/posts/ with body undefined","service":"api-gateway","timestamp":"2025-12-28T22:34:09.149Z"}
+{"level":"warn","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTRlZmZkZTk1Mzk3ZmU2MmRjNWY3NTgiLCJ1c2VybmFtZSI6Im5ld1VzZXJOYW1lMTIzIiwiaWF0IjoxNzY2OTYxMTQ0LCJleHAiOjE3NjY5NjI2NDR9.6HjxaSPnsFsWUil2iMeBlUi6PJzGrm8z4E2gsTKqXgY","service":"api-gateway","timestamp":"2025-12-28T22:34:09.149Z"}
+{"level":"info","message":"Response received from Post service: 500","service":"api-gateway","timestamp":"2025-12-28T22:34:09.189Z"}
+{"level":"info","message":"API GATEWAY Recieved POST request for /v1/posts/ with body undefined","service":"api-gateway","timestamp":"2025-12-28T22:36:42.580Z"}
+{"level":"warn","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTRlZmZkZTk1Mzk3ZmU2MmRjNWY3NTgiLCJ1c2VybmFtZSI6Im5ld1VzZXJOYW1lMTIzIiwiaWF0IjoxNzY2OTYxMTQ0LCJleHAiOjE3NjY5NjI2NDR9.6HjxaSPnsFsWUil2iMeBlUi6PJzGrm8z4E2gsTKqXgY","service":"api-gateway","timestamp":"2025-12-28T22:36:42.581Z"}
+{"level":"info","message":"Response received from Post service: 201","service":"api-gateway","timestamp":"2025-12-28T22:36:42.836Z"}
+{"level":"info","message":"API GATEWAY Recieved POST request for /v1/posts/ with body undefined","service":"api-gateway","timestamp":"2025-12-28T22:39:04.745Z"}
+{"level":"warn","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTRlZmZkZTk1Mzk3ZmU2MmRjNWY3NTgiLCJ1c2VybmFtZSI6Im5ld1VzZXJOYW1lMTIzIiwiaWF0IjoxNzY2OTYxMTQ0LCJleHAiOjE3NjY5NjI2NDR9.6HjxaSPnsFsWUil2iMeBlUi6PJzGrm8z4E2gsTKqXgY","service":"api-gateway","timestamp":"2025-12-28T22:39:04.746Z"}
+{"level":"info","message":"Response received from Post service: 400","service":"api-gateway","timestamp":"2025-12-28T22:39:04.768Z"}
+{"level":"info","message":"API GATEWAY Recieved POST request for /v1/posts/ with body undefined","service":"api-gateway","timestamp":"2025-12-28T22:39:14.925Z"}
+{"level":"warn","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTRlZmZkZTk1Mzk3ZmU2MmRjNWY3NTgiLCJ1c2VybmFtZSI6Im5ld1VzZXJOYW1lMTIzIiwiaWF0IjoxNzY2OTYxMTQ0LCJleHAiOjE3NjY5NjI2NDR9.6HjxaSPnsFsWUil2iMeBlUi6PJzGrm8z4E2gsTKqXgY","service":"api-gateway","timestamp":"2025-12-28T22:39:14.926Z"}
+{"level":"info","message":"Response received from Post service: 201","service":"api-gateway","timestamp":"2025-12-28T22:39:15.014Z"}
+{"level":"info","message":"API GATEWAY Recieved DELETE request for /v1/posts/6951b1921a2696bcec72790e with body undefined","service":"api-gateway","timestamp":"2025-12-28T22:40:52.565Z"}
+{"level":"warn","message":"No Auth Header","service":"api-gateway","timestamp":"2025-12-28T22:40:52.565Z"}
+{"level":"warn","service":"api-gateway","timestamp":"2025-12-28T22:40:52.566Z"}
+{"level":"warn","message":"Access attempt without valid token!","service":"api-gateway","timestamp":"2025-12-28T22:40:52.566Z"}
+{"level":"info","message":"API GATEWAY Recieved DELETE request for /v1/posts/6951b1921a2696bcec72790e with body undefined","service":"api-gateway","timestamp":"2025-12-28T22:41:26.805Z"}
+{"level":"warn","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTRlZmZkZTk1Mzk3ZmU2MmRjNWY3NTgiLCJ1c2VybmFtZSI6Im5ld1VzZXJOYW1lMTIzIiwiaWF0IjoxNzY2OTYxMTQ0LCJleHAiOjE3NjY5NjI2NDR9.6HjxaSPnsFsWUil2iMeBlUi6PJzGrm8z4E2gsTKqXgY","service":"api-gateway","timestamp":"2025-12-28T22:41:26.806Z"}
+{"level":"info","message":"Response received from Post service: 200","service":"api-gateway","timestamp":"2025-12-28T22:41:26.888Z"}
+{"level":"info","message":"API GATEWAY Recieved POST request for /v1/posts/ with body undefined","service":"api-gateway","timestamp":"2025-12-28T22:41:31.277Z"}
+{"level":"warn","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTRlZmZkZTk1Mzk3ZmU2MmRjNWY3NTgiLCJ1c2VybmFtZSI6Im5ld1VzZXJOYW1lMTIzIiwiaWF0IjoxNzY2OTYxMTQ0LCJleHAiOjE3NjY5NjI2NDR9.6HjxaSPnsFsWUil2iMeBlUi6PJzGrm8z4E2gsTKqXgY","service":"api-gateway","timestamp":"2025-12-28T22:41:31.278Z"}
+{"level":"info","message":"Response received from Post service: 201","service":"api-gateway","timestamp":"2025-12-28T22:41:31.335Z"}
+{"level":"info","message":"API GATEWAY Recieved GET request for /v1/posts/comment with body undefined","service":"api-gateway","timestamp":"2025-12-28T22:42:44.159Z"}
+{"level":"warn","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTRlZmZkZTk1Mzk3ZmU2MmRjNWY3NTgiLCJ1c2VybmFtZSI6Im5ld1VzZXJOYW1lMTIzIiwiaWF0IjoxNzY2OTYxMTQ0LCJleHAiOjE3NjY5NjI2NDR9.6HjxaSPnsFsWUil2iMeBlUi6PJzGrm8z4E2gsTKqXgY","service":"api-gateway","timestamp":"2025-12-28T22:42:44.160Z"}
+{"level":"info","message":"Response received from Post service: 404","service":"api-gateway","timestamp":"2025-12-28T22:42:44.167Z"}
+{"level":"info","message":"API GATEWAY Recieved POST request for /v1/posts/comment with body undefined","service":"api-gateway","timestamp":"2025-12-28T22:42:53.634Z"}
+{"level":"warn","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTRlZmZkZTk1Mzk3ZmU2MmRjNWY3NTgiLCJ1c2VybmFtZSI6Im5ld1VzZXJOYW1lMTIzIiwiaWF0IjoxNzY2OTYxMTQ0LCJleHAiOjE3NjY5NjI2NDR9.6HjxaSPnsFsWUil2iMeBlUi6PJzGrm8z4E2gsTKqXgY","service":"api-gateway","timestamp":"2025-12-28T22:42:53.635Z"}
+{"level":"info","message":"Response received from Post service: 400","service":"api-gateway","timestamp":"2025-12-28T22:42:53.639Z"}
+{"level":"info","message":"API GATEWAY Recieved POST request for /v1/posts/comment with body undefined","service":"api-gateway","timestamp":"2025-12-28T22:43:15.471Z"}
+{"level":"warn","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTRlZmZkZTk1Mzk3ZmU2MmRjNWY3NTgiLCJ1c2VybmFtZSI6Im5ld1VzZXJOYW1lMTIzIiwiaWF0IjoxNzY2OTYxMTQ0LCJleHAiOjE3NjY5NjI2NDR9.6HjxaSPnsFsWUil2iMeBlUi6PJzGrm8z4E2gsTKqXgY","service":"api-gateway","timestamp":"2025-12-28T22:43:15.471Z"}
+{"level":"info","message":"Response received from Post service: 400","service":"api-gateway","timestamp":"2025-12-28T22:43:15.503Z"}
+{"level":"info","message":"API GATEWAY Recieved POST request for /v1/posts/comment with body undefined","service":"api-gateway","timestamp":"2025-12-28T22:43:30.418Z"}
+{"level":"warn","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTRlZmZkZTk1Mzk3ZmU2MmRjNWY3NTgiLCJ1c2VybmFtZSI6Im5ld1VzZXJOYW1lMTIzIiwiaWF0IjoxNzY2OTYxMTQ0LCJleHAiOjE3NjY5NjI2NDR9.6HjxaSPnsFsWUil2iMeBlUi6PJzGrm8z4E2gsTKqXgY","service":"api-gateway","timestamp":"2025-12-28T22:43:30.419Z"}
+{"level":"info","message":"Response received from Post service: 201","service":"api-gateway","timestamp":"2025-12-28T22:43:30.893Z"}
